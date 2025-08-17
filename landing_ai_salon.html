@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Asystent dla salonów fryzjerskich i barberów</title>
+  <meta name="description" content="Więcej rezerwacji, mniej no-show. Asystent AI umawia wizyty 24/7, wysyła przypomnienia i zbiera opinie.">
+  <style>
+    :root{
+      --bg:#0f172a; --fg:#0b1220; --text:#0f172a; --muted:#475569; --card:#ffffff; --accent:#0f172a;
+    }
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;color:var(--text);background:#f8fafc;}
+    .container{max-width:1000px;margin:0 auto;padding:24px}
+    .btn{display:inline-block;padding:12px 18px;border-radius:14px;border:1px solid var(--accent);background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+    .btn.outline{background:#fff;color:var(--accent)}
+    header{position:sticky;top:0;background:#ffffffe6;backdrop-filter:blur(8px);border-bottom:1px solid #e2e8f0}
+    nav a{color:var(--muted);text-decoration:none;margin:0 10px}
+    h1{font-size:38px;line-height:1.2;margin:0}
+    h2{font-size:26px;margin:0 0 10px}
+    p{line-height:1.6}
+    .grid{display:grid;gap:16px}
+    @media (min-width:900px){.grid-2{grid-template-columns:1fr 1fr}.grid-3{grid-template-columns:repeat(3,1fr)}}
+    .card{background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:16px}
+    .hero{padding:50px 0}
+    .chip{display:inline-flex;align-items:center;gap:8px;background:#0f172a;color:#fff;padding:8px 12px;border-radius:12px;font-weight:600}
+    .muted{color:#475569}
+    .pricing .card{border-width:2px}
+    .badge{font-size:12px;background:#0f172a;color:#fff;border-radius:999px;padding:4px 8px;margin-left:8px}
+    footer{border-top:1px solid #e2e8f0;padding:28px 0;color:#64748b;font-size:14px}
+    ul{padding-left:18px}
+  </style>
+  <script>
+    function scrollToId(id){document.getElementById(id)?.scrollIntoView({behavior:'smooth'})}
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;">
+      <div class="chip">✂️ AI Asystent dla Salonów</div>
+      <nav class="hide-mobile">
+        <a href="#features">Funkcje</a>
+        <a href="#pricing">Cennik</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn" href="https://calendly.com/your-demo/15min" target="_blank">Umów demo</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero grid grid-2">
+      <div>
+        <h1>Więcej rezerwacji. Mniej no‑show.<br><span class="muted">Bez odpisywania po nocach.</span></h1>
+        <p>Asystent AI umawia wizyty 24/7 przez Messenger/Instagram/WWW, wysyła przypomnienia i zbiera opinie klientów.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+          <a class="btn" href="https://calendly.com/your-demo/15min" target="_blank">📅 Umów 15‑minutowe demo</a>
+          <a class="btn outline" href="#features" onclick="scrollToId('features')">Zobacz jak to działa</a>
+        </div>
+        <p class="muted" style="margin-top:8px">Wdrożenie 48–72 h • 14 dni gwarancji</p>
+      </div>
+      <div class="card">
+        <strong>Przykładowa rozmowa</strong>
+        <div style="margin-top:10px">
+          <div class="card" style="background:#0f172a;color:#fff">Klient: Hej! Chcę się umówić na strzyżenie jutro po 18.</div>
+          <div class="card">Bot: Dostępne mamy 18:30, 19:00 lub 19:30. Która godzina pasuje?</div>
+          <div class="card">Klient: 19:00. Nazywam się Adam, tel. 600‑000‑000.</div>
+          <div class="card">Bot: Wpisuję wizytę i wyślę przypomnienie SMS dzień przed. Do zobaczenia! ✂️</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="container">
+      <h2>Co robi asystent</h2>
+      <div class="grid grid-3" style="margin-top:12px">
+        <div class="card"><strong>Umawia wizyty 24/7</strong><p class="muted">Messenger, Instagram, strona WWW – klient rezerwuje w 30 sekund.</p></div>
+        <div class="card"><strong>Przypomnienia SMS/e‑mail</strong><p class="muted">No‑show guard: potwierdzenie dnia poprzedniego i szybkie przełożenie.</p></div>
+        <div class="card"><strong>Opinie Google</strong><p class="muted">Po wizycie bot prosi o opinię i podpowiada odpowiedzi.</p></div>
+      </div>
+    </section>
+
+    <section id="pricing" class="container pricing">
+      <h2>Pakiety i ceny</h2>
+      <p class="muted">14 dni gwarancji satysfakcji. Wdrożenie 3 990 zł jednorazowo.</p>
+      <div class="grid grid-3" style="margin-top:12px">
+        <div class="card">
+          <div style="display:flex;align-items:center;justify-content:space-between;"><strong>Basic</strong></div>
+          <div style="font-size:28px;font-weight:800;margin:6px 0">799 zł/mies.</div>
+          <ul class="muted">
+            <li>Rezerwacje przez chat</li>
+            <li>FAQ salonu</li>
+            <li>Lista klientów w Arkuszach Google</li>
+          </ul>
+          <a class="btn" href="https://calendly.com/your-demo/15min" target="_blank" style="width:100%;text-align:center;margin-top:8px">Umów demo</a>
+        </div>
+        <div class="card" style="border-color:#0f172a;box-shadow:0 8px 20px rgba(0,0,0,.06)">
+          <div style="display:flex;align-items:center;justify-content:space-between;"><strong>Standard</strong><span class="badge">Najczęściej wybierany</span></div>
+          <div style="font-size:28px;font-weight:800;margin:6px 0">1 499 zł/mies.</div>
+          <ul class="muted">
+            <li>Przypomnienia SMS/e‑mail</li>
+            <li>No‑show guard (potwierdzenie)</li>
+            <li>Prośby o opinie Google</li>
+            <li>1 mini‑integracja</li>
+          </ul>
+          <a class="btn" href="https://calendly.com/your-demo/15min" target="_blank" style="width:100%;text-align:center;margin-top:8px">Umów demo</a>
+        </div>
+        <div class="card">
+          <div style="display:flex;align-items:center;justify-content:space-between;"><strong>Pro</strong></div>
+          <div style="font-size:28px;font-weight:800;margin:6px 0">2 499 zł/mies.</div>
+          <ul class="muted">
+            <li>Program lojalnościowy</li>
+            <li>Raport miesięczny</li>
+            <li>Priorytetowe wsparcie (1h/tyg.)</li>
+          </ul>
+          <a class="btn" href="https://calendly.com/your-demo/15min" target="_blank" style="width:100%;text-align:center;margin-top:8px">Umów demo</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="container">
+      <h2>FAQ</h2>
+      <div class="grid grid-2" style="margin-top:12px">
+        <div class="card"><strong>Jak szybko wdrożymy asystenta?</strong><p class="muted">W 48–72 godziny od dostępu do strony/FB/IG i ustalenia FAQ.</p></div>
+        <div class="card"><strong>Czy można odwołać bez kosztów?</strong><p class="muted">Tak, w ciągu 14 dni od startu – bez podawania przyczyny.</p></div>
+        <div class="card"><strong>Gdzie działa?</strong><p class="muted">Messenger, Instagram (DM) i jako widget na stronie WWW.</p></div>
+        <div class="card"><strong>Jak rozliczamy?</strong><p class="muted">Wdrożenie 3 990 zł + miesięczny abonament wg pakietu.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px">
+      <div>✂️ AI Asystent dla Salonów</div>
+      <div>© <span id="year"></span> Twoja Firma • kontakt@twojadomena.pl • +48 600 000 000</div>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+  </footer>
+</body>
+</html>
